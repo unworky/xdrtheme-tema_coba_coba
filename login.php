@@ -14,140 +14,79 @@ echo '<script type="text/javascript">
 alert("Username atau Password salah!");
 </script>';
 }
-echo '<!DOCTYPE>
+echo
+'<!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="img/ico.png">
-		<title>Xderm Mini</title>
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script></head>
-	<style>
-		body{
-			font-family: sans-serif;
-			background-image: url(img/background.jpg);
-			background-size: cover;
-			-webkit-background-size: cover;
-			background-repeat: no-repeat;
-		}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Xderm Mini | Log in</title>
+    <meta name="author" content="phpmu.com">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  	<!-- Font Awesome -->
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+ 	  <!-- Ionicons -->
+   	<link rel="stylesheet" href="Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/iCheck/square/blue.css">
+  </head>';
 
-		.header_login {
-			text-align: center;
-			text-transform: uppercase;
-		}
-
-		.box_login {
-			width: 450px;
-			border: none;
-			border-radius: 10px;
-			margin: 5% auto;
-			padding: 1px 20px;
-			box-shadow: 0px 0px 5px 2px #132130
-;
-		}
-		
-		label{
-			font-size: 11pt;
-			font-weight: bold;
-			color: #000;
-			
-		}
-		
-		hr {
-			color: #132130
-;
-		}
-
-		.form_login {
-			box-sizing : border-box;
-			width: 100%;
-			padding: 8px;
-			font-size: 11pt;
-			margin-bottom: 10px;
-			border: 2px solid #132130
-;
-			border-radius: 5px;
-			background: hsla(0, 0%, 100%, .3);
-		}
-
-		.btn_login {
-			-moz-appearance: none;
-			background: #00ACD0;
-			color: #000;
-			font-size: 12pt;
-			width: 100%;
-			border: 2px solid #00ACD0 ;
-			border-radius: 5px;
-			padding: 10px 20px;
-			cursor: pointer;
-		}
-		
-		.btn_login:hover, .btn_login:focus {
-			color: #000000;
-			outline: 0;
-		}
-		.geser {
-			border-color: #00ACD0;
-			color: #ffffff;
-			padding: 8px 20px;
-			background-image: linear-gradient(45deg, #132130 50%, transparent 50%);
-			background-position: 100%;
-			background-size: 400%;
-			transition: background 300ms ease-in-out;
-		}
-		
-		.geser:hover {
-			 background-position: 0;
-		}
-		
-		.footer {
-			width: 100%;
-			height: 50px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: #ffffff;
-			font-weight: bold;
-			position: fixed;
-			bottom: 0px;
-			z-index: 1;
-			background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
-						rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
-			background-size: 600vw 600vw;
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-			animation: slide 10s linear infinite forwards;
-		}
-		
-		@keyframes slide {
-			0% {background-position-x: 0%;}
-			100% {background-position-x: 600vw;}
-		}	
-		
-</style>';
 if ($show == "home"){
 	echo'
-<body>
-	<div class="box_login">
-		<div>
-			<p class="header_login"><img src="img/image.png"></p>
-
-			<form action="?login=1" method="post">
-				<label>Username</label>
-				<input type="text" autofocus name="username" class="form_login" placeholder="Username">
-				<hr>
-				<label>Password</label>
-				<input type="password" autofocus name="password" class="form_login" placeholder="Password">
-			
-				<button type="submit" class="btn_login geser">LOGIN</button>
-			</form>
-		</div>
-	</div>
-	<div class="footer slide">
-        Theme Design by Agus Sriawan<br>
-		Copyright&copy Ryan Fauzi
-    </div>';
+  <body class="hold-transition login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        <a><b>XDERM</b> Mini</a>
+      </div><!-- /.login-logo -->
+      <div class="login-box-body">
+        <p class="login-box-msg">Silahkan Login Pada Form dibawah ini</p>
+        <form action="?login=1" method="post">
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" name="username" placeholder="Username" required>
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" name="password" placeholder="Password" required>
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox"> Remember Me
+                </label>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button name="login" type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $("input").iCheck({
+          checkboxClass: "icheckbox_square-blue",
+          radioClass: "iradio_square-blue",
+          increaseArea: "20%" // optional
+        });
+      });
+    </script>
+  </body>
+  </html>';
 }
-    session_unset();
+
+session_unset();
     session_destroy();
 ?>
