@@ -44,6 +44,7 @@ if ($show == "home"){
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <p class="login-box-msg">Silahkan Login Pada Form dibawah ini</p>
+
         <form action="?login=1" method="post">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" name="username" placeholder="Username" required>
@@ -66,8 +67,10 @@ if ($show == "home"){
             </div><!-- /.col -->
           </div>
         </form>
+
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
+
     <!-- jQuery 2.1.4 -->
     <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
