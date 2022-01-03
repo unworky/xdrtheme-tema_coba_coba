@@ -9,4 +9,4 @@ GITREPO="xdrtheme-tema_coba_coba"
 # Add your used repository branch below, and place it between double quotes, No space allowed
 GITBRANCH="main"
 # Add theme version, and place it between double quotes, No space allowed. Example : v1.0 or v2.1-beta
-THEMEVER="v2.0"
+THEMEVER="v4.3"
