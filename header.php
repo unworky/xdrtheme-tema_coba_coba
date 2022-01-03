@@ -7,4 +7,3 @@ function ceklogin(){
     header("Location: login.php");
 }
     $_SESSION['LAST_ACTIVITY'] = time(); // update last activity time stamp
-}
